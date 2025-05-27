@@ -101,6 +101,8 @@ Criar uma função que simula um sorteio de amigo secreto.
 
 Criar um timer regressivo que avisa quando chega a 0.
 
+
+
 🚀 50 Mini-Projetos JavaScript (até 100 linhas)
 Relógio digital em tempo real.
 
