@@ -1,16 +1,18 @@
 let calcular = document.querySelector(".btnCalcular");
 let resultado = document.getElementById("resultado");
 
-calcular.addEventListener("click", soma);
+calcular.addEventListener("click", exec);
 
-function soma(event) {
+function exec(event) {
   event.preventDefault();
-  let numeros = document.querySelectorAll(".num");
-  console.log(numeros);
 
-  let total = 0;
-  numeros.forEach((num) => {
-    total += parseFloat(num.value);
-  });
-  resultado.innerHTML = total;
+  if (!!document.querySelector(".num").value) {
+    let numero = document.querySelector(".num").value;
+
+    if (numero % 2 === 0) {
+      resultado.innerHTML = `${numero} é par`;
+    } else {
+      resultado.innerHTML = `${numero} é ímpar`;
+    }
+  } else alert("insira um número antes!");
 }
